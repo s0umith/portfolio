@@ -2,7 +2,6 @@
 import type { Metadata } from "next";
 import { Oxanium as FontOxanium } from "next/font/google";
 import Navbar from "@/components/small-components/Navbar";
-import FooterCustom from "@/components/small-components/footer";
 import { cn } from "@/lib/utils"
 import { lazy, Suspense, useEffect, useState } from "react";
 import "./globals.css";
@@ -12,7 +11,6 @@ import { Toaster } from "@/components/ui/toaster"
 import Head from "next/head";
 
 
-const Bg = lazy(() => import("@/components/small-components/bg"));
 
 
 const fontSans = FontOxanium({
@@ -27,11 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [bgLoaded, setBgLoaded] = useState(true);
-  // useEffect(() => {
-  //   const timer = setTimeout(() => setBgLoaded(true), 3000); // Simulate loading
-  //   document.title = 'Naveen Teja Beerakuppam | Portfolio'
-  //   return () => clearTimeout(timer);
-  // }, []);
+
   
   return (
     
