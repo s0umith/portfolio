@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import Bg from "@/components/small-components/bg";
 import { useState } from "react";
 import gifBackground from "@/public/4K_11.gif"
 import pic from "@/public/pic1.jpg"
