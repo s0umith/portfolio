@@ -5,7 +5,7 @@ import Image from "next/image"
 import { Intern1Skills } from "@/lib/constants"
 
 
-export default function ExperienceCard(){
+export default function ProjectCard(){
     
     return(
         <div className="w-90/100 h-3/5 flex justify-between gap-6 ">

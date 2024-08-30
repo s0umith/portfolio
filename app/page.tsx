@@ -22,7 +22,7 @@ export default function Home() {
               </div>
               <div className="h-full flex flex-col justify-around py-2">
                 <h4 className="text-2xl text-lightBlue font-semibold">About Me</h4>
-                <span className="text-white text-xl">A mix of determination, panic, and a playlist for every mood swing ...</span>
+                <span className="text-white text-xl">A mix of determination&lsquo; panic&lsquo; and a playlist for every mood swing ...</span>
               </div>
             </div>
             <div className="w-4/5 h-45/100 flex justify-between items-center flex-wrap">
@@ -30,7 +30,7 @@ export default function Home() {
                 <Image className="w-full h-full object-cover" src={pic} alt="image"/>
               </div>
               <div className="w-1/2 h-full text-white text-lg flex flex-col gap-4">
-                <span>I am a final  year student in Dual Degree from IIT Kanpur in the Aerospace Engineering Department. My academic journey has been driven by a strong passion for technology , where I've consistently sought innovative applications of Artificial Intelligence.</span>
+                <span>I am a final  year student in Dual Degree from IIT Kanpur in the Aerospace Engineering Department. My academic journey has been driven by a strong passion for technology&lsquo;  where I've consistently sought innovative applications of Artificial Intelligence.</span>
                 <span>My research focus centers on Large Language Models to enhance natural language inference for clinical trials on breast cancer. I am dedicated to perform impactful research to advance technology for the betterment of society.</span>
               </div>
             </div>
