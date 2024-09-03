@@ -19,6 +19,9 @@
   -webkit-text-fill-color: transparent;
   animation: translateFromTop 4s ease-out;
 }
+.hello{
+  width: 10px;
+}
 .name-gradient{
   background: linear-gradient(136deg, #153944 -160.54%, #a9c8d28a 60.67%, #031b2200 140.33%);
   -webkit-background-clip: text;
