@@ -3,6 +3,8 @@ import Image from "next/image";
 import { useState } from "react";
 import gifBackground from "@/public/4K_11.gif"
 import pic from "@/public/pic1.jpg"
+import Footer from "@/components/small-components/footer";
+
 
 export default function Home() {
   const [bgLoaded, setBgLoaded] = useState(false);
@@ -34,6 +36,7 @@ export default function Home() {
               </div>
             </div>
         </div>
+        <Footer/>
     </div>
   );
 }

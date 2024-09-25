@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils"
 import { lazy, Suspense, useEffect, useState } from "react";
 import "./globals.css";
 import Loading from "./loading";
-
 import { Toaster } from "@/components/ui/toaster"
 import Head from "next/head";
 

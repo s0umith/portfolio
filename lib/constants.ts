@@ -23,81 +23,78 @@ const NavbarItems = [
 
 export const Intern1Skills = [ "React.Js","Node.Js","RESTful APIs","Express.Js","MongoDB","Machine Learning"]
 
-export const galleryTexts ={
-    Farewell : 'Farewell, engineers! As you embark on new journeys, cherish the memories, embrace the challenges, and continue to innovate and inspire. The future is yours to shape!',
-    Freshers : 'We were delighted to host Freshers for the first-year undergraduate and postgraduate students of Aerospace Engineering. This significant offline event marked a return after a four-year hiatus and below you can find link toa photos.',
-    RSD : 'We were thrilled to organize the Research and Development Symposium for our Aerospace Engineering students. Below you can find links for the details regarding RSD.'
-}
-
-export const saeSocialMedia = {
-    insta : 'https://www.instagram.com/sae.aero.iitk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
-    linkedin : 'https://www.linkedin.com/company/society-of-aerospace-engineers/',
-    mail:'mailto:aerosoc@iitk.ac.in',
-    twitter : 'https://l.instagram.com/?u=https%3A%2F%2Ftwitter.com%2FSAE63678112&e=AT1bYfO944Tjm1m73gydQHnhWT1GdnS28YAkf6Mj522lKE4ESk2LWG9SlCeC9V4bB1hAwMfHOuUWkSy_EHzcv8Cjl61q3s0yYJlE57_aTSQhew9HpNe6j9E',
-}
-
-export const gallery = [
+export const socialMedia = [
     {
-        imageLink : '',
-        moreLink : 'https://1drv.ms/f/s!AouKdCd9HJLdgYIkVrYaKZMmpdYgwg?e=v2NaP0',
-        type : 'Farewell',
-        batch : 'Batch Y20'
+        svgPath : "/social-media/github.svg",
+        url : "https://github.com/NaveentejaB"
     },
     {
-        imageLink : '',
-        moreLink : 'https://1drv.ms/f/s!AouKdCd9HJLdgYIkVrYaKZMmpdYgwg?e=v2NaP0',
-        type : 'RSD',
-        batch : 'Year 2024'
+        svgPath : "/social-media/insta.svg",
+        url : "https://www.instagram.com/nawin_teja__/"
+    },
+    {
+        svgPath : "/social-media/linkedin.svg",
+        url : "https://www.linkedin.com/in/naveen-teja-beerakuppam-72487a23b/"
+    },
+    {
+        svgPath : "/social-media/mail.svg",
+        url : "mailto:naveenteja1912@gmail.com"
     },
 ]
 
-export const HeadSAE = [
-    // {   
-    //     name : 'Dr Rajesh Ranjan',
-    //     photo :'/team-photos/Rajesh_Ranjan.png',
-    //     position : 'Faculty Advisor',
-    //     email : 'rajeshr@iitk.ac.in',
-    //     linkedin : 'https://www.linkedin.com/in/rajeshranjanarya/',
-    // },
-    {   
-        name : 'Dr Pradeep Moise',
-        photo :'/team-photos/Pradeep-Moise.jpg',
-        position : 'Faculty Advisor',
-        email : 'pmoise@iitk.ac.in',
-        linkedin : 'https://www.linkedin.com/in/pradeep-moise-1b795b299/',
+export const experienceData = [
+    {
+        internRole : "Ai Tech Intern",
+        companyName : "SS Wealthserv Technologies",
+        period : "October 2023 - December 2023",
+        info : " I designed and implemented RESTful I designed and implemented RESTful I designed and implemented RESTful I designed and implemented RESTful API endpoints&lsquo; rations for apparel inventory&lsquo;  search functionality with customizable filters in the Express.js framework. I optimized the integration between the backend API and the React.js frontend&lsquo; and resolved some major bugs in the frontend&lsquo; resulting in a 10% performance enhancement and improved user experience. Also contributed in implementing cloth segmentation&lsquo; human parsing for the ML model.",
+        skills : [ "React.Js","Node.Js","RESTful APIs","Express.Js","MongoDB","Machine Learning"]
+    },
+    {
+        internRole : "Ai Tech Intern",
+        companyName : "SS Wealthserv Technologies",
+        period : "October 2023 - December 2023",
+        info : " I designed and implemented RESTful I designed and implemented RESTful I designed and implemented RESTful I designed and implemented RESTful API endpoints&lsquo; rations for apparel inventory&lsquo;  search functionality with customizable filters in the Express.js framework. I optimized the integration between the backend API and the React.js frontend&lsquo; and resolved some major bugs in the frontend&lsquo; resulting in a 10% performance enhancement and improved user experience. Also contributed in implementing cloth segmentation&lsquo; human parsing for the ML model.",
+        skills : [ "React.Js","Node.Js","RESTful APIs","Express.Js","MongoDB","Machine Learning"]
+    },
+    {
+        internRole : "Ai Tech Intern",
+        companyName : "SS Wealthserv Technologies",
+        period : "October 2023 - December 2023",
+        info : " I designed and implemented RESTful I designed and implemented RESTful I designed and implemented RESTful I designed and implemented RESTful API endpoints&lsquo; rations for apparel inventory&lsquo;  search functionality with customizable filters in the Express.js framework. I optimized the integration between the backend API and the React.js frontend&lsquo; and resolved some major bugs in the frontend&lsquo; resulting in a 10% performance enhancement and improved user experience. Also contributed in implementing cloth segmentation&lsquo; human parsing for the ML model.",
+        skills : [ "React.Js","Node.Js","RESTful APIs","Express.Js","MongoDB","Machine Learning"]
     },
 ]
 
-export const recentMsgs = [
+export const projectData = [
     {
-        head : 'Winter Projects 2023-24',
-        bdy : 'With winter around the corner, we are back with our winter projects for students interested in enhancing their skills and gaining practical experience November 30, 2023 With winter around the corner, we are back with our winter projects for students interested in enhancing their skills and gaining practical experience November 30, 2023'
+        heading : "GreenNexus",
+        subHead : "An enviromental platform",
+        period : "May 2024 - Present",
+        info : " I designed and implemented RESTful I designed and implemented RESTful I designed and implemented RESTful I designed and implemented RESTful API endpoints&lsquo; rations for apparel inventory&lsquo;  search functionality with customizable filters in the Express.js framework. I optimized the integration between the backend API and the React.js frontend&lsquo; and resolved some major bugs in the frontend&lsquo; resulting in a 10% performance enhancement and improved user experience. Also contributed in implementing cloth segmentation&lsquo; human parsing for the ML model.",
+        skills : [ "Next.Js","Node.Js","RESTful APIs","Express.Js","MongoDB","Machine Learning"]
     },
-    
     {
-        head : 'New Faculty Advisor',
-        bdy : 'We are honored to welcome Dr. Pradeep Moise as our new faculty advisor. Dr.Pradeep Moise`s distinguished expertise and vision will greatly enhance our society`s initiatives and academic endeavors.'
+        heading : "GreenNexus",
+        subHead : "An EnviromentaL Platform",
+        period : "May 2024 - Present",
+        info : " I designed and implemented RESTful I designed and implemented RESTful I designed and implemented RESTful I designed and implemented RESTful API endpoints&lsquo; rations for apparel inventory&lsquo;  search functionality with customizable filters in the Express.js framework. I optimized the integration between the backend API and the React.js frontend&lsquo; and resolved some major bugs in the frontend&lsquo; resulting in a 10% performance enhancement and improved user experience. Also contributed in implementing cloth segmentation&lsquo; human parsing for the ML model.",
+        skills : [ "Next.Js","Node.Js","RESTful APIs","Express.Js","MongoDB","Machine Learning"]
+    },
+    {
+        heading : "GreenNexus",
+        subHead : "An EnviromentaL Platform",
+        period : "May 2024 - Present",
+        info : " I designed and implemented RESTful I designed and implemented RESTful I designed and implemented RESTful I designed and implemented RESTful API endpoints&lsquo; rations for apparel inventory&lsquo;  search functionality with customizable filters in the Express.js framework. I optimized the integration between the backend API and the React.js frontend&lsquo; and resolved some major bugs in the frontend&lsquo; resulting in a 10% performance enhancement and improved user experience. Also contributed in implementing cloth segmentation&lsquo; human parsing for the ML model.",
+        skills : [ "Next.Js","Node.Js","RESTful APIs","Express.Js","MongoDB","Machine Learning"]
     },
 ]
 
-export const recentActivites = [
-    
-    
-    {
-        head : 'Career Choice',
-        bdy : 'Radhika is a Senior Research Engineer (AR/VR/XR) at SamsungSemiconductor Inc. Prior to joining Samsung, she was a Postdoctoral Research Fellow at the Robotics Institute, University of Michigan working in the Ford Center for Autonomous Vehicles. She received her PhD and research-based MS from Purdue University in Civil Engineering specializing in Geomatics, and obtained her B.Tech, with Double Majors in Civil Engineering and Electrical Engineering from the Indian Institute of Technology Kanpur IITK',
-        date : 'November 12,2023',
-        ref : '',
-        photo : '/website poster copy.jpg'
-    },
-    {
-        head : 'AntarikX`24',
-        bdy : 'Extraterrestrial Space captures the curiosity and imagination of Indian students and citizens alike.Join us on August 24, 2024, for National Space Day at IIT Kanpur, celebrating India`s space achievements. Organized by the Departments of Aerospace Engineering and SPASE, the event features astronomy outreach activities and expert discussions. This year marks the first anniversary of Chandrayaan 3`s successful Moon landing, making the event even more special. Let`s explore the present and future of the Indian space program together!',
-        date : 'August 24,2024',
-        ref : 'https://www.instagram.com/p/C-KKDkqiiob/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
-        ,photo : '/website poster copy.jpg'
-    },
-    
-]
+
+
+
+
+
+
 
 export {NavbarItems}

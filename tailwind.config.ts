@@ -25,12 +25,15 @@ const config = {
       },
       width:{
         '90/100':"85%",
+        '95/100':"90%",
         '55/100':"55%",
+        '45/100':"45%",
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       colors: {
+        grayBlueBg : '#131d2e',
         lightBlue : '#48c8f0',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
