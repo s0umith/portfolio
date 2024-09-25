@@ -9,12 +9,12 @@ export default function Footer(){
                 { socialMedia.map((data,i)=>(
                     <Link href={data.url}  rel="noopener noreferrer" target="_blank">
                         <div className="p-1 rounded-full cursor-pointer">
-                            <Image className="w-6 h-6" src={data.svgPath} alt="img" width={8} height={8}/>
+                            <Image className=" w-6 h-6  flex" src={data.svgPath} alt="img" width={8} height={8}/>
                         </div>
                     </Link>
                 ))}
             </div>
-            <span className="text-sm">@2024 by Beerakuppam Naveen Teja. All rights reserved.</span> 
+            <span className="text-xs md:text-sm">@2024 by Beerakuppam Naveen Teja. All rights reserved.</span> 
         </footer>
     )
 }

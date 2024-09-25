@@ -51,11 +51,11 @@ const Page = () => {
     }
     return(
         <div className="w-screen h-screen">
-            <div className="w-full h-1/5 flex justify-center items-center ">
-                <h2 className="gradient-text text-6xl font-semibold ">CONTACT</h2>
+            <div className="w-full h-1/4 md:h-1/3 flex justify-center items-center ">
+                <h2 className="gradient-text text-4xl md:text-6xl font-semibold ">CONTACT</h2>
             </div>
             <div className="w-full flex justify-center">
-                <div className="w-[800px] h-[500px]  p-6 flex flex-col gap-6 justify-start items-center ">
+                <div className="w-[700px] md:w-[800px] h-[500px]  md:p-6 flex flex-col gap-6 justify-start items-center ">
                     <div className="w-4/5 flex justify-start -mb-2">
                         <DecorTrapLineBig/>
                     </div>
@@ -64,7 +64,7 @@ const Page = () => {
                         <Input type="email" id="email" placeholder="Email" />
                     </div> */}
                     <Form {...form} >
-                        <form onSubmit={form.handleSubmit(onSubmit)} className="px-6 space-y-6 w-4/5 flex flex-col justify-start">
+                        <form onSubmit={form.handleSubmit(onSubmit)} className="px-6 space-y-6 w-95/100 md:w-4/5 flex flex-col justify-start">
                             <FormField
                                 control={form.control}
                                 name="email"
