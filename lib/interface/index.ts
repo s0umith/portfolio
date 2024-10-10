@@ -10,26 +10,29 @@ export interface GalleryCardProps {
     heading : string
 }
 
-interface teamMemberType{
-    name : string,
-    photo : string,
-    position : string,
-    email : string,
-    linkedin : string,
-    instagram : string,
-    fb  : string
-}
-export interface teamHeadType{
-    data : {
-        name : string,
-        photo : string,
-        position : string,
-        email : string,
-        linkedin : string,
-    }
+interface experienceDataType{
+    internRole : string,
+    companyName : string,
+    period : string,
+    info : string,
+    skills : string[]
 }
 
-export interface TeamMemberCardProps{
-    data : teamMemberType,
-    head : boolean
+interface projectDataType{
+    heading : string,
+    subHead : string,
+    period : string,
+    info : string,
+    skills : string[]
+}
+
+
+export interface ProjectCardProps{
+    index : number,
+    data : projectDataType
+}
+
+export interface ExperienceCardProps{
+    index : number,
+    data : experienceDataType
 }
