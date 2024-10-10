@@ -31,7 +31,7 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
     return(
-        <div className="w-full h-[80px] pr-12 bg-black flex justify-between items-center">
+        <div className="w-full h-[80px] pr-12 bg-black flex justify-between items-center z-50">
             <div className=" h-full w-[160px] overflow-hidden cursor-pointer">
                 <Image className="w-full h-full object-cover" src={logo} alt="img" width={6} height={6}/>
             </div>

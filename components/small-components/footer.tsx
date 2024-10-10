@@ -14,7 +14,7 @@ export default function Footer(){
                     </Link>
                 ))}
             </div>
-            <span className="text-xs md:text-sm">@2024 by Beerakuppam Naveen Teja. All rights reserved.</span> 
+            <span className="text-xs md:text-sm font-normal">@2024 by Beerakuppam Naveen Teja. All rights reserved.</span> 
         </footer>
     )
 }
