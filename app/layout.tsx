@@ -39,7 +39,7 @@ export default function RootLayout({
           <Loading />
         ) : (
           <>
-            <header><Navbar/></header>
+            <header className="fixed w-full"><Navbar/></header>
             <main className="bg-black">{children}</main>
           </>
           

@@ -18,7 +18,7 @@ export default function ProjectCard({data,index}:ProjectCardProps){
                             <h5 className="text-sm md:text-base text-slate-300 my-1">{data.period}</h5>
                         </div>
                     </div>
-                    <span className="text-white text-xs md:text-sm indent-10 font-medium">{data.info}</span>
+                    <span className="text-white text-xs md:text-base indent-10 font-medium">{data.info}</span>
                     <div className="w-full mt-2 flex gap-2 flex-wrap">
                         {data.skills.map((val,i)=>(
                             <span key={i} className="text-xs md:text-sm cursor-pointer px-3 pt-1.5 pb-1 border border-gray-700 bg-grayBlueBg text-white after:transition after:duration-500 after:ease-in-out hover:text-black hover:bg-lightBlue font-normal rounded-3xl">{val}</span>
