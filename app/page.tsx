@@ -1,46 +1,57 @@
 "use client"
+
 import Image from "next/image";
 import { useState } from "react";
-import gifBackground from "@/public/4K_11.gif"
-import pic from "@/public/pic11.jpg"
+import gifBackground from "@/public/pwm1.gif";
+import pic from "@/public/pic11.jpg";
 import Footer from "@/components/small-components/footer";
-import { homePageData } from "@/lib/constants";
-
+import { homePageData ,aboutMe} from "@/lib/constants";
 
 export default function Home() {
-  const [bgLoaded, setBgLoaded] = useState(false);
   return (
-    <div className="w-screen bg-black" style={{height:'100vh '}}>
-        <div className="h-full  w-full bg-cover bg-no-repeat flex flex-col justify-center items-center -z-50 "
-          style={{ backgroundImage: `url(${gifBackground.src})` }}>
-            <h1 className="name-gradient text-4xl md:text-7xl font-bold text-center">Naveen Teja Beerakuppam</h1>
-            <div className="w-full h-20 "></div>
+    <div className="min-h-screen bg-black">
+      <div className="relative h-screen w-full flex flex-col justify-center items-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center z-0 opacity-65" 
+          style={{ backgroundImage: `url(${gifBackground.src})` }}
+        />
+        <div className="relative z-10 text-center">
+          <h1 className="name-gradient text-6xl md:text-7xl font-semibold">
+            Naveen Teja Beerakuppam
+          </h1>
         </div>
-        <div className="w-full h-full px-8 md:px-20 md:my-10 flex flex-col justify-start items-center gap-10">
-            <div className="  md:w-4/5 h-16per flex md:gap-20 gap-4">
-              <div className="w-[10px] h-full">
-                <div className="w-2/5 h-3/5 bg-lightBlue"></div>
-                <div className="w-full h-2/5 bg-lightBlue"></div>
-              </div>
-              <div className="h-full flex flex-col justify-around py-2">
-                <h4 className="text-xl md:text-2xl text-lightBlue font-semibold">About Me</h4>
-                <span className="text-white text-base md:text-xl">{homePageData.AboutMe}</span>
-              </div>
-            </div>
-            <div className=" w-full md:w-4/5 h-45/100 flex justify-between items-center flex-wrap gap-4">
-              <div className="w-full md:w-2/5 h-full md:ml-8 overflow-hidden rounded-lg">
-                <Image className="w-full h-full object-cover rounded-xl" src={pic} alt="image"/>
-              </div>
-              <div className="w-full md:w-1/2 h-full text-white text-base md:text-lg flex flex-col gap-4">
-                <span className="indent-10">{homePageData.Intro1}</span>
-                <span className="indent-10">{homePageData.Intro2}</span>
-                <span className="indent-10">{homePageData.Intro3}</span>
-              </div>
-            </div>
+      </div>
+
+      <div className="container mx-auto px-4 py-10 space-y-10 ">
+        <div className="w-4/5 mx-auto flex  gap-10 ">
+          <div className=" w-[10px] h-[120px]">
+            <div className="w-2/5 h-3/5 bg-lightBlue"></div>
+            <div className="w-full h-2/5 bg-lightBlue"></div>
+          </div>
+          <div className="flex flex-col justify-center py-1 gap-4 ">
+            <h4 className="text-xl text-lightBlue font-medium">About Me</h4>
+            <span className="text-white text-2xl">{aboutMe}</span>
+          </div>
         </div>
-        <div className="w-full h-10 mt-10">
-            <Footer/>
+
+        <div className="w-90/100 mx-auto flex flex-col md:flex-row justify-center items-start gap-8">
+          <div className="w-full md:w-45/100  rounded-lg overflow-hidden opacity-85">
+            <Image 
+              src={pic} 
+              alt="Profile" 
+              className="w-full h-full object-cover rounded-xl" 
+              priority 
+            />
+          </div>
+          <div className="w-full md:w-1/2 text-white  text-base space-y-6 mt-5 ">
+            {homePageData.map((value,i) => (
+              <p key={i} className="indent-10">{value}</p>
+            ))}
+          </div>
         </div>
+      </div>
+
+      <Footer />
     </div>
   );
 }

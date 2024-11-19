@@ -11,6 +11,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+.element {
+  border: 10px solid transparent; /* Set the border width and color to transparent */
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)) 1 100% round; /* Create a black-to-transparent gradient border with rounded corners */
+}
 .gradient-text {
   background: linear-gradient(140deg, #48c8f0 12.74%, #c8c8f000 120%);
   -webkit-background-clip: text;
@@ -23,7 +27,7 @@
   width: 10px;
 }
 .name-gradient{
-  background: linear-gradient(136deg, #153944 -160.54%, #a9c8d28a 60.67%, #031b2200 140.33%);
+  background: linear-gradient(136deg, #ffffff -160.54%, #afeafd8a 60.67%, #79e0ff00 140.33%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

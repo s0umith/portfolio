@@ -1,6 +1,6 @@
 "use client"
 import DecorTrapLine from "@/components/reusable-ui/trrap-line"
-import qa from "@/public/qa.png"
+import qa from "@/public/f5.jpg"
 import Image from "next/image"
 import { Intern1Skills } from "@/lib/constants"
 import { ProjectCardProps } from "@/lib/interface"
@@ -27,7 +27,7 @@ export default function ProjectCard({data,index}:ProjectCardProps){
                     </div>
             </div>
             <div className="w-full md:w-45/100 h-full">
-                <Image className="w-full h-full object-cover transform transition-transform duration-500 ease-in-out hover:scale-110 hover:-translate-x-4" src={qa} alt="img"/>
+                <Image className=" object-cover transform transition-transform duration-500 ease-in-out hover:scale-110 hover:-translate-x-4" width={560} height={400} src={data.imgLink} alt="img"/>
             </div>
         </div>
     )

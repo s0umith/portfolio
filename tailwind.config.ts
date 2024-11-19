@@ -31,7 +31,7 @@ const config = {
         '45/100':"45%",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        sans: ["var(--font-poppins)", ...fontFamily.sans],
       },
       colors: {
         grayBlueBg : '#131d2e',

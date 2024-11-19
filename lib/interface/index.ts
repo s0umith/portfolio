@@ -14,6 +14,7 @@ interface experienceDataType{
     internRole : string,
     companyName : string,
     period : string,
+    imgLink : string,
     info : string,
     skills : string[]
 }
@@ -21,6 +22,7 @@ interface experienceDataType{
 interface projectDataType{
     heading : string,
     subHead : string,
+    imgLink : string,
     period : string,
     info : string,
     skills : string[]
