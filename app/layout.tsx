@@ -1,13 +1,12 @@
 "use client"
 import type { Metadata } from "next";
-import { Oxanium as FontOxanium } from "next/font/google";
+import { Oxanium as FontOxanium,Poppins } from "next/font/google";
 import Navbar from "@/components/small-components/Navbar";
 import { cn } from "@/lib/utils"
 import { lazy, Suspense, useEffect, useState } from "react";
 import "./globals.css";
 import Loading from "./loading";
 import { Toaster } from "@/components/ui/toaster"
-import Head from "next/head";
 
 
 
@@ -15,6 +14,12 @@ import Head from "next/head";
 const fontSans = FontOxanium({
   subsets: ["latin"],
   variable: "--font-sans",
+})
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
 })
 
 
@@ -32,14 +37,14 @@ export default function RootLayout({
       
       <body className={cn(
           "h-screen w-full font-sans antialiased bg-black",
-          fontSans.variable
+          poppins.variable
           )} suppressHydrationWarning={true}
       >
       {!bgLoaded ? (
           <Loading />
         ) : (
           <>
-            <header className="fixed w-full"><Navbar/></header>
+            <header><Navbar/></header>
             <main className="bg-black">{children}</main>
           </>
           
