@@ -114,7 +114,7 @@ export const projectData = [
 export const aboutMe = 'The mix of determination and varying moods through the playlist metaphor.'
 export const homePageData =[
      "I am a final-year student pursuing a Dual Degree in Aerospace Engineering at IIT Kanpur. My academic journey has been fueled by a passion for technology. I am currently working on my thesis research on simulating the instability of separation bubble during transonic conditions over the OAT15A airfoil.",
-     "My journey into software development began a year ago, sparked by a fascination with building scalable applications, which make impact on the society. Since then, I've immersed myself in full-stack development crafting robust backends with Node.js, Django to designing responsive frontends using Next.js, React.js etc..., I've honed my skills in creating user-centric, high-performance systems while developing a knack for problem-solving. ",
+     "My journey into software development began a year ago, sparked by a fascination with building scalable applications, which make impact on the society. Since then, I've immersed myself in full-stack development crafting robust backends with Node.js, Django to designing responsive frontends using Next.js, React.js etc... I've honed my skills in creating user-centric, high-performance systems while developing a knack for problem-solving. ",
      "Now, with a solid foundation in web technologies, I'm excited to start my journey in blockchain development. For me, every line of code is an opportunity to innovate and make a real-world impact."
 ]
 

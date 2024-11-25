@@ -20,7 +20,8 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { createLetsConnectForm } from "@/utils/validation";
-import { useToast } from "@/components/ui/use-toast"
+import { useToast } from "@/components/ui/use-toast";
+import emailjs from '@emailjs/browser';
 
 
 
@@ -38,15 +39,29 @@ const Page = () => {
     });
     
     async function onSubmit(values: z.infer<typeof createLetsConnectForm>) {
-        console.log(values)
-        form.reset({
-            email: "",
-            name:"",        
-            message: ""
-        });
-        toast({
-            description: "Mail sent Successfully!",
-        })
+        const serviceID : any = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+        const templateID : any = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+        const userID : any = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+        try{
+            const emailParams = values;
+            const res = await emailjs.send(serviceID, templateID, emailParams, userID);
+            if (res.status === 200) {
+                form.reset({
+                    email: "",
+                    name:"",        
+                    message: ""
+                });
+                toast({
+                    description: "Mail sent Successfully!",
+                })
+            }
+        }catch(err){
+            toast({
+                description: "Mail not sent.",
+            })
+        }
+
+        
 
     }
     return(
@@ -59,10 +74,6 @@ const Page = () => {
                     <div className="w-4/5 flex justify-start -mb-2">
                         <DecorTrapLineBig/>
                     </div>
-                    {/* <div className="w-4/5 flex flex-col gap-2">
-                        <Label htmlFor="email" className="text-white">Email</Label>
-                        <Input type="email" id="email" placeholder="Email" />
-                    </div> */}
                     <Form {...form} >
                         <form onSubmit={form.handleSubmit(onSubmit)} className="px-6 space-y-6 w-95/100 md:w-4/5 flex flex-col justify-start">
                             <FormField
@@ -109,7 +120,6 @@ const Page = () => {
                                     <PaperAirplaneIcon className=" w-3 h-3"/>
                                     <span className="">Send Message</span>
                                 </div>
-                                
                             </Button>
                         </form>
                     </Form>

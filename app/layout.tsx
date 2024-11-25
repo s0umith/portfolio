@@ -1,4 +1,5 @@
 "use client"
+require('dotenv').config();
 import type { Metadata } from "next";
 import { Oxanium as FontOxanium,Poppins } from "next/font/google";
 import Navbar from "@/components/small-components/Navbar";
