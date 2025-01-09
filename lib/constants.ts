@@ -114,7 +114,7 @@ export const projectData = [
 ]
 export const aboutMe = 'A passionate engineer with a knack for innovation and a love for creativity, both in technology and life.';
 export const homePageData = [
-    "👋 Hi, I'm Soumith Batta! I'm a Robotics and Machine Learning Engineer currently pursuing my Master's in Robotics at the University of Minnesota-Twin Cities. My expertise spans Robotics, Computer Vision, Machine Learning, and Control Systems. I am deeply passionate about building cutting-edge solutions that solve real-world problems, and I thrive in collaborative settings where technology and innovation intersect.",
+    "👋 Hi, I'm Soumith Batta! I'm a Robotics and Machine Learning Engineer currently pursuing my Master's in Robotics at the University of Minnesota-Twin Cities. My expertise spans Robotics, Computer Vision, Machine Learning, and Control Systems. I am deeply passionate about data-efficient algorithms, computer vision, behavior modeling, and ensuring algorithm performance and safety. I thrive in collaborative environments where technology and innovation come together to address real-world challenges.",
     "My journey in robotics and machine learning has been fueled by a drive to explore uncharted territories and push the boundaries of what's possible. From developing intelligent systems to refining control algorithms, I am committed to excellence and continuous learning.",
     "When I'm not immersed in engineering challenges, I find joy in staying creative and active. Whether capturing moments through photography, skateboarding for a quick adrenaline rush, or unwinding to the beats of techno music, I believe in balancing hard work with meaningful leisure."
 ];
