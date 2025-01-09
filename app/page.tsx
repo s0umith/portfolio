@@ -16,7 +16,7 @@ export default function Home() {
         />
         <div className="relative z-10 text-center">
           <h1 className="name-gradient text-6xl md:text-7xl font-semibold">
-            Naveen Teja Beerakuppam
+            Soumith Batta
           </h1>
         </div>
       </div>

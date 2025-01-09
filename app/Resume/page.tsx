@@ -9,7 +9,7 @@ export default function Page(){
             <div className="w-full h-[720px] flex justify-center">
                 <div className="w-95/100 h-full bg-gray-100 flex justify-center items-center border border-gray-400">
                     <iframe
-                        src='master_resume_Naveen_Teja.pdf'
+                        src='Resume.pdf'
                         className="w-full h-full"
                         title="PDF Viewer"
                     />
