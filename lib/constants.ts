@@ -79,6 +79,14 @@ export const projectData = [
         "skills": ["3D Gaussian Splatting", "DINOv2", "Multi-Head Attention", "RANSAC", "Pose Estimation", "MLP", "Computer Vision"]
     },
     {
+        "heading": "Pneumonia Detection Using ResNet-50",
+        "subHead": "",
+        "period": "September 2024 - November 2024",
+        "imgLink": "/resnet.jpeg",
+        "info": "Developed a deep learning model using ResNet-50 with transfer learning to classify chest X-rays as normal or pneumonia. Addressed class imbalance using focal loss and implemented data augmentation for robustness. Achieved a test accuracy of 76.20% and AUC of 85.49%, showcasing the potential for automated diagnosis in resource-constrained settings.",
+        "skills": ["Deep Learning", "Transfer Learning", "ResNet-50", "Medical Imaging", "TensorFlow", "Data Augmentation"]
+    },
+    {
         "heading": "DRDO’s UAV-Guided UGV Navigation Challenge",
         "subHead": "Inter IIT Tech Meet 10.0, Kharagpur",
         "period": "February 2022 - March 2022",
