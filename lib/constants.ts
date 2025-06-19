@@ -44,6 +44,14 @@ export const socialMedia = [
 
 export const experienceData = [
     {
+        "internRole": "Computer Vision and AI/ML Intern",
+        "companyName": "AddiGuru",
+        "period": "May 2025 - Present",
+        "imgLink": "/AddiGuru.png",
+        "info": "Developed 3D reconstruction system for additive manufacturing models using layer-by-layer imaging, reducing computational overhead by 41% while enabling real-time defect visualization in manufacturing processes. Implemented advanced part detection algorithms utilizing Mask2Former and Swin Transformer models, achieving 96.4% detection accuracy and reducing false positives by 35%. Collaborated with clients to analyze requirements and customize software solutions, resulting in high satisfaction and tailored features.",
+        "skills": ["Computer Vision", "3D Reconstruction", "Mask2Former", "Swin Transformer", "Python", "PyTorch", "Additive Manufacturing", "Real-time Systems"]
+     },
+    {
         "internRole": "Research Intern",
         "companyName": "ADMiRE Research Center, Carinthia University of Applied Sciences (FH Kärnten)",
         "period": "May 2023 - July 2023",
@@ -63,13 +71,29 @@ export const experienceData = [
 
 export const projectData = [
     {
-        "heading": "GRU-Based Temporal Modeling for Model Predictive Control",
+        "heading": "Sequential Bayesian Optimization for Multimodal Robot Exploration",
         "subHead": "",
-        "period": "September 2024 - November 2024",
+        "period": "February 2025",
+        "imgLink": "/sbo.png",
+        "info": "Outperformed POMCP baselines by 2.3× higher reward and 50% RMSE reduction using belief MDPs with Gaussian process uncertainty modeling. Engineered MCTS with Double Progressive Widening, reducing predictive variance by 36% via mutual information rewards. Implemented Python framework for Mars rovers with adaptive cost-aware policies and real-time belief updates.",
+        "skills": ["Bayesian Optimization", "MCTS", "Gaussian Processes", "Python", "POMCP", "Belief MDPs"]
+     },
+     {
+        "heading": "Enhanced Robotic Arm Trajectory Tracking via MPC and Deep RL",
+        "subHead": "",
+        "period": "February 2024",
         "imgLink": "/gru.avif",
-        "info": "Integrated GRUs with MPC for controlling a KUKA LBR4 robotic manipulator, achieving a 36% improvement in trajectory tracking and a test MSE of 0.0138. Optimized hyperparameters using Genetic Algorithms, reducing computational overhead by 25%. Validated the framework through simulations in ROS 2, showcasing robust and precise control under real-world uncertainties.",
-        "skills": ["GRU", "MPC", "ROS 2", "Genetic Algorithms", "TensorFlow", "Keras"]
-    },
+        "info": "Developed GRU-based MPC for 7-DOF KUKA LBR4 manipulator, achieving test MSE of 0.0089 and outperforming baseline DNN by 44%. Implemented Linearized MPC strategy balancing computational tractability with tracking precision, reducing position MSE to 0.0753 rad². Deployed DDPG and Recurrent DDPG algorithms for Franka Panda robot, achieving exceptional tracking precision with MSE of 0.002 under partial observability.",
+        "skills": ["GRU", "MPC", "Deep RL", "DDPG", "KUKA LBR4", "Franka Panda", "PyTorch", "Control Systems"]
+     },
+     {
+        "heading": "Near-Future Vehicle Collision Prediction using Deep Learning on Dashcam Video Data",
+        "subHead": "",
+        "period": "March 2025",
+        "imgLink": "/nexar.png",
+        "info": "Developed multi-stream deep learning models for collision prediction using Nexar dashcam dataset, achieving AUROC of 0.816 with VideoMAEv2 transformer architecture. Implemented lightweight CollisionGNN with object-level explainability reaching AUROC of 0.731 for real-time deployment. Engineered CNN+GRU pipeline with MobileNetV2 backbone, demonstrating effective spatiotemporal feature learning with 0.671 AUROC on 1,500 annotated video clips.",
+        "skills": ["Deep Learning", "Computer Vision", "VideoMAE", "Graph Neural Networks", "PyTorch", "TensorFlow", "YOLO", "MobileNetV2", "GRU"]
+     },
     {
         "heading": "6D-Gauss: Camera 6D Pose Estimation from a Single RGB Image",
         "subHead": "",
@@ -122,8 +146,9 @@ export const projectData = [
 ]
 export const aboutMe = 'A passionate engineer with a knack for innovation and a love for creativity, both in technology and life.';
 export const homePageData = [
-    "👋 Hi, I'm Soumith Batta! I'm a Robotics and Machine Learning Engineer currently pursuing my Master's in Robotics at the University of Minnesota-Twin Cities. I hold a Bachelor’s degree in Aerospace Engineering from IIT Kanpur, where I developed a strong analytical and technical foundation. Building on this, my expertise now spans Robotics, Computer Vision, Machine Learning, and Control Systems. I am deeply passionate about data-efficient algorithms, computer vision, behavior modeling, and ensuring algorithm performance and safety. I thrive in collaborative environments where technology and innovation come together to address real-world challenges.",
-    "When I'm not immersed in engineering challenges, I find joy in staying creative and active. Whether capturing moments through photography, skateboarding or hitting the slopes while snowboarding."
+    "👋 Hi, I'm Soumith Batta! I'm a Machine Learning Engineer with specialized expertise in computer vision and AI systems, currently pursuing my Master's in Robotics at the University of Minnesota-Twin Cities. I'm also working as a Computer Vision and AI/ML Intern at AddiGuru, where I focus on developing and optimizing foundational models for real-world applications.",
+    "What truly excites me is the intersection of theoretical breakthroughs and practical implementation, particularly in multimodal understanding, uncertainty quantification, and model efficiency. I'm fascinated by how transformer architectures can be adapted for complex spatial reasoning tasks, and honestly, there's nothing quite like the satisfaction of solving those tricky problems that come up when you're trying to deploy sophisticated AI systems in the real world. I love working with teams to bridge that gap between cutting-edge research and solutions that actually work at scale, translating complex AI capabilities into systems that make a real difference.",
+    "Outside of work, I'm all about finding creative outlets and staying active like photography, skateboarding, snowboarding, that kind of stuff. Lately, I've been diving into something completely new: teaching myself how to make music with code, which has been a fun way to blend my technical side with creativity."
 ];
 
 
