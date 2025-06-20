@@ -47,7 +47,7 @@ export const experienceData = [
         "internRole": "Computer Vision and AI/ML Intern",
         "companyName": "AddiGuru",
         "period": "May 2025 - Present",
-        "imgLink": "/AddiGuru.png",
+        "imgLink": "/addiGuru.png",
         "info": "Developed 3D reconstruction system for additive manufacturing models using layer-by-layer imaging, reducing computational overhead by 41% while enabling real-time defect visualization in manufacturing processes. Implemented advanced part detection algorithms utilizing Mask2Former and Swin Transformer models, achieving 96.4% detection accuracy and reducing false positives by 35%. Collaborated with clients to analyze requirements and customize software solutions, resulting in high satisfaction and tailored features.",
         "skills": ["Computer Vision", "3D Reconstruction", "Mask2Former", "Swin Transformer", "Python", "PyTorch", "Additive Manufacturing", "Real-time Systems"]
      },
